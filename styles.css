@@ -4,6 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "Roboto Mono", monospace;
 }
 
 :root {
@@ -74,6 +75,7 @@ li, a, button {
 .nav_links li a {
     transition: all 0.3s ease;
     background-color: #24252A;
+    margin: 30px;
 }
 
 .nav_links li a:hover {
@@ -132,7 +134,7 @@ button:hover {
     margin-left: 50px;
     margin-right: 100px;
     border-radius: 50%;
-    background-color: #090F5E;
+    background: linear-gradient(135deg, #8B0000, #000000);
 }
 
 #description {
@@ -158,7 +160,24 @@ button:hover {
     }
 }
 
-.section_project {
+.icons {
+    gap: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 100%);
+}
+
+.icons i {
+    font-size: 36px; /* You can try 30px, 36px, 40px depending on what looks good */
+    margin: 50px;
+}
+
+.section div, h1 {
+    font-size: 40px;
+}
+
+.section_about {
     padding-top: 80px;
     display: flex;
     justify-content: center;
